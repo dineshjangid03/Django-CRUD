@@ -1,0 +1,7 @@
+<!-- myapp/templates/delete_book.html -->
+<h1>Delete Book</h1>
+<p>Are you sure you want to delete the book: {{ book.title }}?</p>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+</form>
